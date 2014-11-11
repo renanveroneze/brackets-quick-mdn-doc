@@ -1,7 +1,7 @@
 {
     "name": "renanveroneze.brackets-quick-mdn-doc",
     "title": "Quick MDN Doc",
-    "description": "This is a brackets extension, for helping searches from developers. Is a shortcut to MDN( Mozilla Developer Network ), best location to search.",
+    "description": "This is a brackets extension, for helping searches from developers. Is a shortcut to MDN(Mozilla Developer Network), best location to search.",
     "homepage": "https://github.com/renanveroneze/brackets-quick-mdn-doc",
     "version": "0.0.1",
     "author": "Renan Veroneze <veroneze.renan@gmail.com>",
