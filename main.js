@@ -3,13 +3,11 @@ define(function (require, exports, module) {
     "use strict";
 
     var extension_utils = brackets.getModule('utils/ExtensionUtils'),
-        node_domain = brackets.getModule('utils/NodeDomain'),
+        native_app = brackets.getModule('utils/NativeApp'),
         dialogs = brackets.getModule('widgets/Dialogs'),
         app_init = brackets.getModule('utils/AppInit'),
         command = brackets.getModule('command/CommandManager'),
         menus = brackets.getModule('command/Menus'),
-        module_path = extension_utils.getModulePath(module, 'node/mdn_domain'),
-        mdn_domain = new node_domain( 'mdn_domain', module_path ),
         template = require('text!template.html');
 
 
@@ -27,7 +25,7 @@ define(function (require, exports, module) {
 
             var query = $('.mdn-input').val();
 
-            mdn_domain.exec('open_window', query);
+            native_app.openURLInDefaultBrowser( 'https://developer.mozilla.org/pt-BR/search?q=' + query );
             dialog.close();
 
         });
