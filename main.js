@@ -18,7 +18,7 @@ define(function (require, exports, module) {
         $('.mdn-input').keyup(function( e ) {
             if( e.keyCode == '13' ) $('.mdn-submit').trigger('click');
             if( e.keyCode == '27' ) dialog.close();
-        });
+        }).focus();
 
         $('.mdn-close').click(function() { dialog.close(); });
         $('.mdn-submit').click(function() {
